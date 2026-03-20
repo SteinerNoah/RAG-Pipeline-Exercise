@@ -6,7 +6,7 @@ Baue eine einfache RAG-Pipeline (Retrieval-Augmented Generation), die die Dokume
 
 Das Ergebnis soll ein einfacher Python-Einstiegspunkt oder eine kleine CLI sein, die eine Frage entgegennimmt und eine Antwort auf Basis der bereitgestellten Dokumente ausgibt. Ein Frontend, eine Web-App oder eine grafische Oberfläche sind nicht erforderlich.
 
-Beispielhafte Fragen, die deine Pipeline beantworten können sollte, findest du weiter unten.
+Am Ende dieses Dokuments stehen **Beispielfragen** zur Orientierung. Es gibt keine Bewertung, ob diese Fragen richtig beantwortet wurden.
 
 > **Wichtig:** Bitte beachte die [Hinweise zur Verwendung der kostenlosen OpenRouter-Modelle](#llm-zugriff--openrouter) im Setup.
 
@@ -115,10 +115,10 @@ rag-pipeline-exercise/
 
 ## Beispielfragen
 
-Beispielhafte Fragen zu den bereitgestellten Dokumenten:
+Beispiele für mögliche Nutzerfragen:
 
 - Was ist FastAPI, und wofür eignet es sich typischerweise? (`What is FastAPI?.docx`)
-- Welche drei RAG-Paradigmen werden unterschieden, und welches Problem soll RAG bei LLMs adressieren? (`Retrieval-Augmented Generation for Large Language Models - A Survey.pdf`)
-- Was ist Azure AI Foundry, und welche Schritte oder Konzepte werden für den Start beschrieben? (`Getting Started with Azure AI Foundry.docx`)
-- Welche Dokumentformate kann Docling verarbeiten, und welche Ausgabeformate werden unterstützt? (`Docling - An Efficient Open-Source Toolkit for AI-driven Document Conversion.pdf`)
+- Welche drei RAG-Paradigmen werden unterschieden (`Retrieval-Augmented Generation for Large Language Models - A Survey.pdf`)
+- Was ist Azure AI Foundry? (`Getting Started with Azure AI Foundry.docx`)
+- Welche Dokumentformate kann Docling verarbeiten? (`Docling - An Efficient Open-Source Toolkit for AI-driven Document Conversion.pdf`)
 
