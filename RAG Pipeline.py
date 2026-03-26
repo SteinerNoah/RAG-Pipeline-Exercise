@@ -13,7 +13,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 DATA_DOCUMENTS = Path("data")
 
-def return_file_string(path: Path) -> str:
+def return_file_string(path: Path) -> str | None:
     """Reads a single supported file and returns its text as a string"""
     suffix = path.suffix.lower()
     
