@@ -77,7 +77,8 @@ CHROMA_DB_COLLECTION = "rag_dokumente"
 TOP_K = 4
 
 def build_vector_database(model: SentenceTransformer):
-    """Builds a new vector database each run. It converts each document to a text string, splits the text string into chunks, and embeds the text string chunks"""
+    """Builds a new vector database each run. It converts each document to a text string, 
+    splits the text string into chunks, and embeds the text string chunks"""
     
     client = chromadb.PersistentClient(path=str(CHROMA_DB_FOLDER)) 
     
@@ -132,7 +133,8 @@ def find_similar_chunks(collection, model: SentenceTransformer, question: str, t
 CHAT_MODEL_NAME = "openrouter/free" 
 
 def answer_question(question: str, chunks: list[dict[str, object]]) -> str:
-    """Sends the question as a string of text and the list of dictionaries corresponding with the retrieved document chunks to the chat model to return an answer"""
+    """Sends the question as a string of text and the list of dictionaries corresponding 
+    with the retrieved document chunks to the chat model to return an answer"""
     
     if not chunks: 
         return "Ich konnte in den Dokumenten keinen passenden Inhalt finden."
@@ -156,8 +158,10 @@ def answer_question(question: str, chunks: list[dict[str, object]]) -> str:
     return response.content 
 
 def main() -> None:
-    """Runs the full RAG pipeline from the command line"""
-    """Loads enviromental variables, checks API key, reads the query, embeds data and builds vector database, retrieves relevant chunks, and generates response"""
+    """Runs the full RAG pipeline from the command line:
+    Loads enviromental variables, checks API key, reads the query, 
+    embeds data and builds vector database, 
+    retrieves relevant chunks, and generates response"""
     
     load_dotenv() 
     
